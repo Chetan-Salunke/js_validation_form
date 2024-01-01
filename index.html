@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation-Form</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
-
-
+    <div class="main-container">
+        <div class="img-container">
+            <img src="Login-amico.png" alt="">
+        </div>
+        <div class="form-container">
+            <form action="submit" id="form">
+                <h1>Registration Form</h1>
+                <div class="container">
+                    <div class="container1">
+                        <label for="name" id="name_error">First Name</label>
+                        <input type="text" name="" id="name" placeholder="Enter your Name"><br>
+                        <!-- <span style="color: red;" id="name_error"></span> -->
+                    </div>
+                    <div class="container1">
+                        <label for="lastname" id="lastname_error">Last Name</label>
+                        <input type="text" name="" id="lastname" placeholder="Enter your Last Name"><br>
+                        <!-- <span style="color: red;" id="lastname_error"></span> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container1">
+                        <label for="phone" id="phone_error">Phone Number</label>
+                        <input type="number" name="" id="phone" placeholder="Enter your Phone Number"><br>
+                        <!-- <span style="color: red;" id="phone_error"></span> -->
+                    </div>
+                    <div class="container1">
+                        <label for="email" id="email_error">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+                        <!-- <span style="color: red;" id="email_error"></span> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container1">
+                        <label for="password" id="password_error">New Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter New password">
+                    </div>
+                    <div class="container1">
+                        <button type="submit" onclick="successfull()">Submit</button>
+                        <span id="btn" style="color: green;"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="lastline">
+        <p>Copyright &#169; 2023 <a href="https://chetan-salunke.github.io/Portfolio/">Chetan Salunke.</a> All Rights Reserved.</p>
+    </div>
     <script src="index.js"></script>
 </body>
+
 </html>
